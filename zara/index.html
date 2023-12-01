@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZARA</title>
+<style>
+/* reset */
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+h1,h2,h3,h4 { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+body {font-family: 'Franklin Gothic Demi','Baskerville Old Face','Noto Sans KR'; font-size: 16px;}
+
+.blind { position:absolute; top:-9999px; }
+
+
+
+.skip_navigation a { 
+	position:absolute; left:0px; top:-9999px; z-index:1001;
+	color:white; background:black; padding:5px;}
+.skip_navigation a:focus { top:0; }
+
+
+/* layout */
+
+#headervisual {background-image: url(images/headervisual.jpg); background-repeat: no-repeat; background-position: center top;
+background-attachment: fixed; height: 983px;}
+
+#contents {height: 1932px;}
+
+#footer {height:486px;}
+
+
+/* header+visual */
+#headervisual .inner {width: 1360px;margin: 0 auto; position: relative;}
+#headervisual .inner h3 {position: absolute; left: 0px; top:48px;}
+#headervisual .inner input {position: absolute; left: 308px; top:52px ; outline: none; border: 0;
+     border: 2px solid black; width: 615px; height:32px;padding-left: 10px;}
+#headervisual .inner .search {position: absolute; left: 906px; top:58px ; width: 23px;}
+#headervisual .inner .search:hover {opacity: 0.5;}
+#headervisual .inner .gnb {position: absolute; right: 0; top:64px ; display: flex; justify-content: space-between; width: 320px;}
+#headervisual .inner .gnb a {text-decoration: none; color: black; padding: 5px; }
+#headervisual .inner .gnb a:hover {background-color: white; border-radius: 20px;}
+
+@keyframes m1 { 
+	0% { letter-spacing:30px; opacity:0; }/* 시작 */
+	100% { letter-spacing:0px; opacity:1; }/* 끝 */
+}
+
+#headervisual .inner p {position: absolute; left:0; top: 376px; text-transform:uppercase; 
+    font-family: 'Baskerville Old Face'; font-size: 60px; line-height: 48px;
+}
+#headervisual .inner .typo1 {
+    animation:m1 1s;
+letter-spacing:0px;}
+
+#headervisual .inner p:last-child {position: absolute; left:0; top: 504px; margin-top: 33px; font-size: 24px;text-transform: none;line-height: 20px;}
+
+
+
+
+
+/* contents */
+#contents .new .inner1 {width:1360px; margin: 0 auto;}
+#contents .new .inner1 h3 {font-size:24px ; font-family:'Franklin Gothic Demi';margin-top: 113px; margin-bottom:21px;}
+#contents .new .inner1 ul { display: flex; justify-content: space-between;}
+#contents .new .inner1 ul li img {transition: 0.5s;}
+#contents .new .inner1 ul li img:hover {border-radius: 40px;}
+#contents .new .inner1 ul p:last-child {font-family: 'Noto Sans KR'; color: #233787; font-weight: 900;}
+
+#contents .best .inner2 {width:1360px; margin: 0 auto;}
+#contents .best .inner2 h3 {font-size:24px ; font-family:'Franklin Gothic Demi';margin-top: 234px; margin-bottom:21px;}
+#contents .best .inner2 ul { display: flex; justify-content: space-between;}
+#contents .best .inner2 ul li img {transition: 0.5s;}
+#contents .best .inner2 ul li img:hover {border-radius: 40px;}
+#contents .best .inner2 ul p:last-child {font-family: 'Noto Sans KR'; color: #233787; font-weight: 900; margin-bottom: 220px;}
+
+
+
+
+
+/* footer */
+#footer .detail {/*background-color: #233787;*/ height: 346px; background-image: url(images/footerimg.jpg);}
+#footer .detail .inner1 {width: 1360px; margin: 0 auto;}
+#footer .detail .inner1 p {color: white; font-family:'Franklin Gothic Demi','Noto Sans KR'; text-align: center;}
+#footer .detail .inner1 p.newsletter {font-size: 24px; padding-top: 58px; font-weight: 600;padding-bottom: 62px;}
+#footer .detail .inner1 p.jung {padding-top: 70px; margin-bottom: 43px;}
+
+#footer .copyright {background-color: white; color: black; height: 140px; font-family: 'Franklin Gothic Demi','Noto Sans KR';}
+#footer .copyright .inner2 {width: 1360px; margin: 0 auto; text-align: center; padding-top:65px;}
+</style>
+</head>
+<body>
+    <div class="skip_navigation">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#footer">하단 바로가기</a>
+    </div>
+
+    
+    <div id="headervisual">
+        <div class="inner">
+        <h3><a href="index.html"><img src="images/logo.png" alt="ZARA"></a></h3>
+
+        <nav>
+            <ul>
+                <li><a href="#">
+                    <form>
+                        <fieldset>
+                            <legend class="blind">통합검색</legend>
+                            <label for="t1" class="blind">검색어 입력</label>
+                            <input type="text">
+                        </fieldset>
+                    </form>
+                </a></li>
+                <li><a href="#"><img src="images/search.png" alt="search" class="search"></a></li>
+            </ul>
+            <h2 class="blind">주요메뉴</h2>
+            <ul class="gnb">
+                <li><a href="#">WOMAN</a></li>
+                <li><a href="#">MAN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BEAUTY</a></li>
+            </ul>
+        </nav>
+        <p class="typo1">There is no beauty, <br>
+            only beauties</p>
+        <p>Small production of multiple varieties, <br>
+            short time to production, relatively low quality, fast turnover</p>
+        </div>
+    </div>
+
+    <div id="contents">
+        <div class="new">
+            <div class="inner1">
+            <h3>NEW ARRIVAL</h3>
+            <ul>
+                <li><a href="#"><img src="images/new1.jpg" alt="울 블렌드 더블 브레스트 크롭 재킷"></a>
+                    <p>울 블렌드 더블 브레스트 크롭 재킷</p>
+                    <p>129,900원</p></li>
+                <li><a href="#"><img src="images/new2.jpg" alt="워터프루프 패딩 점퍼"></a>
+                    <p>워터프루프 패딩 점퍼</p>
+                    <p>109,900원</p></li>
+                <li><a href="#"><img src="images/new3.jpg" alt="울 블렌드 라운드넥 코트"></a>
+                    <p>울 블렌드 라운드넥 코트</p>
+                    <p>149,900원</p></li>
+                </ul> 
+            </div>
+        </div>
+
+        <div class="best">
+            <div class="inner2">
+            <h3>2023 BEST</h3>
+            <ul>
+                <li><a href="#"><img src="images/best1.jpg" alt="울 블렌드 더블 페이스드 크로스 코트"></a>
+                    <p>울 블렌드 더블 페이스드 크로스 코트</p>
+                    <p>369,900원</p></li>
+                <li><a href="#"><img src="images/best2.jpg" alt="부클레 코트"></a>
+                    <p>부클레 코트</p>
+                    <p>149,900원</p></li>
+                <li><a href="#"><img src="images/best3.jpg" alt="디스트로이드 케이블 니트 코트"></a>
+                    <p>디스트로이드 케이블 니트 코트</p>
+                    <p>109,900원</p></li>
+            </ul> 
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="detail">
+            <div class="inner1">
+            <h2 class="blind">회사 기타 정보</h2>
+            <p class="newsletter">뉴스레터에 가입하세요</p>
+            <p>TIKTOK   instagram   facebook   X   pinterest   kakao   youtube   spotify </p>
+            <p class="jung">아이티엑스코리아 유한회사 ｜ 사업자등록번호: 120-88-14733 ｜ 대표자 : ROMAY DE LA COLINA JOSE 
+                MANUEL ｜ 서울시 강남구 영동대로 511 (삼성동, 트레이드타워 33층) ｜  대표번호: 080-479-0880  ｜  호스팅 서비스 사업자: ITX Merken, B.V.  </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="inner2">
+                <p>Copyright 2023, ZARA, All rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
