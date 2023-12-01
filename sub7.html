@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORK TYPO</title>
+<style>
+/* reset */
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+h1,h2,h3,h4 { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+/* base */
+html{scroll-behavior: smooth;}
+body {font-family: "Garamond", "Noto Sans KR";background-color: #fafafa; position: relative;}
+
+
+.close { position:fixed; right:50px; top:30px; width: 50px;}
+
+
+/* layout */
+img {width: 100%;}
+.img1 {width: 30%; display:block; margin: 0 auto; margin-bottom: 150px; margin-top: 100px;}
+.inner {width: 1200px; margin: 0 auto;}
+.inner h1,
+.inner table {text-align: center;}
+
+.inner h1 {font-size: 115px; margin-bottom: 104px;}
+.inner table {margin: 0 auto; margin-bottom: 123px; }
+
+.inner th {width: 180px; font-size: 30px; font-weight: 400;}
+.inner td {padding: 20px; font-family: "Noto Sans KR";}
+.inner td:nth-child(3) {display: flex; justify-content: space-between; margin-top:15px ;}
+.inner td .box {width: 35px; height: 35px;}
+.inner td .b1 {background-color: white; border: 1px solid #b4b4b4; border-radius: 50px;}
+.inner td .b2 {background-color: black; border: 1px solid black; border-radius: 50px;}
+.inner td .b3 {background-color: #ff2222; border: 1px solid #ff2222; border-radius: 50px;}
+
+.inner p {text-align: center; width: 800px;font-family: "Noto Sans KR"; margin: 0 auto; margin-bottom: 123px;}
+
+.inner a .site {width: 539px; height: 95px; display: block; margin: 0 auto; margin-bottom: 303px;}
+
+.detail .title {display: flex;vertical-align: top; }
+.detail .title .box {width: 9px; height:38px;background-color: black; 
+    margin-right: 17px; margin-bottom: 122px; position: relative; top:5px;}
+.detail .title h2 {font-size: 30px; font-weight: 400; padding-top: 0;}
+/* .detail .img {width: 360px; display: block; margin: 0 auto;} */
+/* .detail .i1 {margin-bottom: 323px;} */
+.detail .i2 {display: block; margin: 0 auto; margin-bottom: 150px; width:80%;}
+
+
+#footer .inner {width: 1200px; margin: 0 auto; }
+#footer .inner p.t2 {font-weight: bold; font-size: 12px; font-family: "Noto Sans KR"; padding-bottom: 81px;}
+
+</style>
+</head>
+<body>
+    <a href="#" class="close" onclick="window.close();"><img src="subimages/close.png" alt="닫기"></a>
+
+    <img src="images/mock7.jpg" alt="mockup_poster" class="img1">
+    <div class="inner">
+        <h1>TYPO</h1>
+        <table>
+            <tr>
+                <th scope="col">구분</th>
+                <th scope="col">기여도</th>
+                <th scope="col">색상</th>
+                <th scope="col">글꼴</th>
+                <th scope="col">사용프로그램</th>
+            </tr>
+
+            <tr>
+                <td>타이포그래피
+                    </td>
+                <td>100% 개인 작품</td>
+                <td>
+                    <div class="box b1"></div>
+                    <div class="box b2"></div>
+                    <div class="box b3"></div>
+                </td>
+                <td>AvantGarde Md BT</td>
+                <td>
+                    photoshop
+                </td>
+            </tr>
+        </table>
+
+        <p>평소에 좋아하는 빨간색을 사용하여 타이포그래피를 디자인하였습니다.
+            <br>
+            타이포를 크게 하여 뒤에 배경으로 넣고
+            <br>
+            각 문장을 그룹화하여 대비감이 느껴지도록 작업하였습니다.</p>
+
+        <!-- <a href="nike/index.html" target="_blank"><img src="images/site.png" alt="사이트 바로가기" class="site"></a> -->
+        
+
+        <div class="detail">
+            <div class="title">
+                <div class="box"></div>
+                <h2>상세 보기</h2>
+            </div>
+            <img src="subimages/typo.jpg" alt="typography" class="i2">
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="inner">
+            <p class="t2">2023 CHAEWON Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>

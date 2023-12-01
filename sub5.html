@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORK SPAO</title>
+<style>
+/* reset */
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+h1,h2,h3,h4 { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+/* base */
+html{scroll-behavior: smooth;}
+body {font-family: "Garamond", "Noto Sans KR";background-color: #fafafa; position: relative;}
+
+
+.close { position:fixed; right:50px; top:30px; width: 50px;}
+
+
+/* layout */
+img {width: 100%;}
+.mock {width: 70%; display: block; margin: 0 auto;}
+.inner {width: 1200px; margin: 0 auto;}
+.inner h1,
+.inner table {text-align: center;}
+
+.inner h1 {font-size: 115px; margin-bottom: 104px;}
+.inner table {margin: 0 auto; margin-bottom: 123px; }
+
+.inner th {width: 180px; font-size: 30px;font-weight: 400;}
+.inner td {padding: 20px; font-family: "Noto Sans KR";}
+.inner td:nth-child(3) {display: flex; justify-content: space-between; margin-top:15px ;}
+.inner td .box {width: 35px; height: 35px;}
+.inner td .b1 {background-color: white; border: 1px solid #b4b4b4; border-radius: 50px;}
+.inner td .b2 {background-color: black; border: 1px solid black; border-radius: 50px;}
+.inner td .b3 {background-color: #ff4848; border: 1px solid #ff4848; border-radius: 50px;}
+
+.inner p {text-align: center; width: 800px;font-family: "Noto Sans KR"; margin: 0 auto; margin-bottom: 123px;}
+
+.inner a .site {width: 539px; height: 95px; display: block; margin: 0 auto; margin-bottom: 303px;}
+
+.detail .title {display: flex;vertical-align: top; }
+.detail .title .box {width: 9px; height:38px;background-color: black; 
+    margin-right: 17px; margin-bottom: 122px; position: relative; top:5px;}
+.detail .title h2 {font-size: 30px; font-weight: 400; padding-top: 0;}
+.detail .i1 {margin-bottom: 323px;}
+.detail .i2 {margin-bottom: 150px;}
+
+#footer .inner {width: 1200px; margin: 0 auto; }
+#footer .inner p.t2 {font-weight: bold; font-size: 12px; font-family: "Noto Sans KR"; padding-bottom: 81px;}
+
+</style>
+</head>
+<body>
+    <a href="#" class="close" onclick="window.close();"><img src="subimages/close.png" alt="닫기"></a>
+
+    <img src="images/mock5.png" alt="mockupmonitor" class="mock">
+    <div class="inner">
+        <h1>SPAO</h1>
+        <table>
+            <tr>
+                <th scope="col">구분</th>
+                <th scope="col">기여도</th>
+                <th scope="col">색상</th>
+                <th scope="col">글꼴</th>
+                <th scope="col">사용프로그램</th>
+            </tr>
+
+            <tr>
+                <td>웹사이트 리디자인
+                    </td>
+                <td>100% 개인 작품</td>
+                <td>
+                    <div class="box b1"></div>
+                    <div class="box b2"></div>
+                    <div class="box b3"></div>
+                </td>
+                <td>Futura Md BT</td>
+                <td>
+                    photoshop
+                </td>
+            </tr>
+        </table>
+
+        <p>이랜드그룹에서 2009년부터 시작 한 SPA 브랜드 ‘SPAO’의 웹사이트 <strong>메인페이지</strong>와 <strong>서브페이지</strong>를 리디자인하였습니다.
+            <br>
+            모듈 그리드를 기초로 하여 브랜드의 역동적 이미지를 강조했고
+            <br>
+            서브페이지의 배경에도 이미지를 넣어 동적인 느낌을 내도록 작업하였습니다.</p>
+
+        <!-- <a href="nike/index.html" target="_blank"><img src="images/site.png" alt="사이트 바로가기" class="site"></a> -->
+        
+
+        <div class="detail">
+            <div class="title">
+                <div class="box"></div>
+                <h2>메인 페이지</h2>
+            </div>
+            <img src="subimages/s1.jpg" alt="main" class="i1">
+
+            <div class="title">
+                <div class="box"></div>
+                <h2>서브 페이지</h2>
+            </div>
+            <img src="subimages/s2.jpg" alt="sub" class="i2 ">
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="inner">
+            <p class="t2">2023 CHAEWON Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>

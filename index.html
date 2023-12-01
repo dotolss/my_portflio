@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<!-- AOS플러그인 -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+
+<link rel="stylesheet" href="css/default.css">
+
+<script src="js/jquery-3.7.1.min.js"></script>
+
+<script>
+$(function(){
+
+	//////////// gnb메뉴 설정
+	let t1 = $("#work").offset().top + 600;//상단으로부터 요소가 떨어져있는 거리
+	let t2 = $("#about").offset().top; 
+	let t3 = $("#contact").offset().top; //alert(t3);
+
+
+	$(".gnb li:eq(0) a, h1 a").click(function(){
+		$('html,body').animate({ scrollTop:0 },700);
+		return false;
+	});
+	$(".gnb li:eq(1) a").click(function(){
+		$('html,body').animate({ scrollTop:t1 },700);
+		return false;
+	});
+	$(".gnb li:eq(2) a").click(function(){
+		$('html,body').animate({ scrollTop:t2 },700);
+		return false;
+	});
+	$(".gnb li:eq(3) a").click(function(){
+		$('html,body').animate({ scrollTop:t3 },700);
+		return false;
+	});
+
+
+	/////////// 스크롤하기전 설정 
+	$(".bar:eq(0)").css({ transition:"1s" });
+	$(".bar:eq(1)").css({ transition:"0.7s" });
+	$(".bar:eq(2)").css({ transition:"0.5s" });
+	$(".bar:eq(3)").css({ transition:"1.3s" });
+
+
+	/////////// 스크롤하는 동안(스크롤할때마다) ////////////////////
+	$(window).scroll(function(){ 
+
+		let sc = $(document).scrollTop();//얼마만큼 스크롤했는지의 값
+		$("#tt").text(sc);//#tt에 스크롤값 출력
+
+
+		$("body").css({ backgroundPosition:"center " + (-sc*0.5) + "px" });
+
+		
+		//영역별 설정
+		if ( sc>=0  &&  sc<t1 ){ //home구간
+
+		}
+
+		if ( sc>=t1  &&  sc<t2 ){ //works구간			
+
+		}
+
+
+
+		if ( sc>=t2  &&  sc<t3 ){ //about구간
+
+			$(".bar:eq(0)").css({ width:"90%" });
+			$(".bar:eq(1)").css({ width:"80%" });
+			$(".bar:eq(2)").css({ width:"50%" });
+			$(".bar:eq(3)").css({ width:"30%" });
+
+		}else{//그외 구간
+			$(".bar").css({ width:"0%" });
+		}
+
+
+
+
+		if ( sc>=t3 ){ //contact구간
+
+		}
+
+
+		if ( sc > 5600 ) {
+			$("#footer .inner img").css({ left:-940, bottom:0 })
+		}
+		else { //그외 구간
+			$("#footer .inner img").css({ left:-600, bottom:-200 })
+		}
+	
+	});
+
+
+});
+</script>
+
+</head>
+
+<body>
+
+	<!--  <div id="tt" style="position:fixed; left:10px; top:200px; background:yellow; padding:5px; font-size:33px; z-index:5000;">0</div>
+	-->
+    <div class="skip_navigation">
+        <a href="#about">본문 바로가기</a>
+        <a href="#footer">하단 바로가기</a>
+    </div>
+    
+    <header id="header">
+        <div class="inner">
+        <h1><a href="#visual"><img src="images/logo2.png" alt="chaewon"></a></h1>
+        <h2 class="blind">주요메뉴</h2>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#visual">HOME</a></li>
+                <li><a href="#work">WORKS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main id="visual">
+        <div class="inner">
+            <p class="p1"  data-aos="fade-right"><span>Port</span>folio</p>
+            <p class="p2">When someone designs a garment, building, machine
+                <br>
+                or other object, they plan it and make a detailed drawing of it from which it can be built or made</p>
+        </div>
+    </main>
+
+    
+        <div id="work">
+            <div class="inner">
+                <h3 data-aos="fade-left">WORKS</h3>
+
+                <div class="box">
+                    <div class="b b1" data-aos="zoom-in-up"><a href="sub1.html" target="_blank"><img src="images/1.jpg" alt="work1"></a>
+                    <div class="cover"><a href="sub1.html" target="_blank">
+                        <h4>CHANEL</h4>
+                        <p>web design & publishing</p>
+                    </a>
+                    </div>   
+                    </div>
+
+
+                    <div class="b b2"  data-aos="zoom-in-up"><a href="sub2.html" target="_blank"><img src="images/2.jpg" alt="work2"></a>
+                        <div class="cover"><a href="sub2.html" target="_blank">
+                            <h4>NIKE</h4>
+                            <p>publishing</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b3"  data-aos="zoom-in-up"><a href="sub3.html" target="_blank"><img src="images/3.jpg" alt="work3"></a>
+                        <div class="cover"><a href="sub3.html" target="_blank">
+                            <h4>ZARA</h4>
+                            <p>web design & publishing</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b4"  data-aos="zoom-in-up"><a href="sub4.html" target="_blank"><img src="images/4.jpg" alt="work4"></a>
+                        <div class="cover"><a href="sub4.html" target="_blank">
+                            <h4>BENZ</h4>
+                            <p>publishing</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b5"  data-aos="zoom-in-up"><a href="sub5.html" target="_blank"><img src="images/5.jpg" alt="work5"></a>
+                        <div class="cover"><a href="sub5.html" target="_blank">
+                            <h4>SPAO</h4>
+                            <p>web design</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b6"  data-aos="zoom-in-up"><a href="sub6.html" target="_blank"><img src="images/6.jpg" alt="work6"></a>
+                        <div class="cover"><a href="sub6.html" target="_blank">
+                            <h4>YSL</h4>
+                            <p>moblie design</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b7"  data-aos="zoom-in-up"><a href="sub7.html" target="_blank"><img src="images/7.jpg" alt="work7"></a>
+                        <div class="cover"><a href="sub7.html" target="_blank">
+                            <h4>TYPO</h4>
+                            <p>typography</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b8"  data-aos="zoom-in-up"><a href="sub8.html" target="_blank"><img src="images/8.jpg" alt="work8"></a>
+                        <div class="cover"><a href="sub8.html" target="_blank">
+                            <h4>PICNIC</h4>
+                            <p>illust</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b9" data-aos="zoom-in-up"><a href="sub9.html" target="_blank"><img src="images/9.jpg" alt="work9"></a>
+                        <div class="cover"><a href="sub9.html" target="_blank">
+                            <h4>It's me!</h4>
+                            <p>illust</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b10"  data-aos="zoom-in-up"><a href="sub10.html" target="_blank"><img src="images/10.jpg" alt="work10"></a>
+                        <div class="cover"><a href="sub10.html" target="_blank">
+                            <h4>Swiming</h4>
+                            <p>illust</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b11"  data-aos="zoom-in-up"><a href="sub11.html" target="_blank"><img src="images/11.jpg" alt="work11"></a>
+                        <div class="cover"><a href="sub11.html" target="_blank">
+                            <h4>Poster design</h4>
+                            <p>graphic</p>
+                        </a>
+                        </div>
+                    </div>
+
+
+                    <div class="b b12" data-aos="zoom-in-up"><a href="sub12.html" target="_blank"><img src="images/12.jpg" alt="work12"></a>
+                        <div class="cover"><a href="sub12.html" target="_blank">
+                        <h4>Book design</h4>
+                        <p>graphic</p>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <h3  data-aos="fade-left">ABOUT</h3>
+            <div class="inner">
+                <div class="me">
+                    <table>
+                        <tr>
+                            <th scope="col">이름</td>
+                            <td>김채원</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">생년월일</td>
+                            <td>96.09.19</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="col">거주지</td>
+                            <td>서울 마포구</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="col">자격증</td>
+                            <td>GTQ 포토샵 1급, ITQ 엑셀 자격증</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="col">취미</td>
+                            <td>그림그리기, 음악듣기</td>
+                        </tr>
+                    </table>
+                
+                </div>
+
+                <div class="skill">
+                   <table>
+                    <tr>
+                        <th scope="col">Illustrator</th>
+                        <td><div class="bar_bg"><div class="bar"></div></div></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Photoshop</th>
+                        <td><div class="bar_bg"><div class="bar"></div></div></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Html & CSS</th>
+                        <td><div class="bar_bg"><div class="bar"></div></div></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">JQuery</th>
+                        <td><div class="bar_bg"><div class="bar"></div></div></td>
+                    </tr>
+                   </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" >
+            <h3 data-aos="fade-left">CONTACT</h3>
+            <div class="inner">
+                <ul>
+                    <li><img src="images/contact11.png" alt="phone number"></li>
+                    <li>010-4039-8542</li>
+                </ul>
+
+                <ul>
+                    <li><img src="images/contact22.png" alt="Email address"></li>
+                    <li>rlaclakseb@naver.com</li>
+                </ul>
+            </div>
+        </div>
+  
+
+    <footer id="footer">
+        <div class="inner">
+            <p class="t1"  data-aos="fade-right"><span>Thank</span> you</p>
+            <p class="t2"  data-aos="fade-left">2023 CHAEWON Portfolio</p>
+
+			<img src="images/bg2.jpg" alt="">
+        </div>
+    </footer>
+
+
+
+<!-- AOS 스크립트 시작 -->
+<script> 
+	AOS.init(); 
+</script>
+
+</body>
+</html>
