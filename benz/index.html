@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Benz</title>
+
+<style>
+/* reset */
+
+
+    body,hr,fieldset,input {margin:0; padding: 0; font-size: 14px; font-family:'Roboto', '나눔바른고딕';}
+    li {list-style: none;}
+    a {text-decoration: none;}
+    img,fieldset,iframe { border:0; }
+
+    .blind { position:absolute; top:-9999px; }
+
+
+
+    .skip_navigation a { 
+	position:absolute; left:0px; top:-9999px; z-index:1001;
+	color:white; background:black; padding:5px;
+    }
+    .skip_navigation a:focus { top:0; }
+
+
+    /*header*/
+
+    #header {background-color: rgb(0, 0, 0);background-image: url(images/background.png);}
+    #header .inner {/*border: 2px dashed #0cc;*/ width: 80%; margin: 0 auto; position: relative;}
+    #header .inner h1 {margin: 0;}
+    #header .inner h1 img { /*border: 2px solid red; */width: 250px; }
+    #header .inner .gnb {/*border: 1px solid #df3d3d;*/ height: 30px;}
+    #header .inner .gnb ul {display: flex; padding-inline-start: 0;}
+    #header .inner .gnb ul li{margin-right: 50px; font-size: 16px;}
+    #header .inner .gnb ul a {color: white;}
+    #header .inner .gnb ul a:hover {text-decoration: overline;}
+
+    #header .inner .top_gnb {display:flex;
+	justify-content:space-between;
+	position:absolute; right:0px; top:44px; 
+	width:200px; height:21px; padding-left: 0;}
+    #header .inner .top_gnb #t1 {border:0;
+	border-bottom:2px solid #c7c7c7;
+	background:none;
+	width:113px; height:19px;
+	outline:none;
+	color:white;}
+    #header .inner .top_gnb input {float: left; justify-content: space-between;}
+    #header .inner .top_gnb .icon {width: 30px; opacity: 0.7;}
+    #header .inner .top_gnb .icon:hover {opacity: 1;}
+    #header .inner .top_gnb #user {filter: invert(100); width: 25px; opacity: 0.7;}
+    #header .inner .top_gnb #user:hover {opacity: 1;}
+    
+    /*visual*/
+    #visual {width: 100%; }
+    #visual .inner {width: 100%; height: 800px; margin: 0px auto; position: relative; }
+    #visual .inner img {width: 100%; }
+    #visual .p1 { color: white; font-size: 150px; font-weight: 900; position: absolute; left: 200px; top: 150px;}
+    #visual .p2 { color: white; font-size: 16px; font-weight: 100; position: absolute; left: 210px; top: 450px;}
+
+
+    /*contents*/
+
+    #contents {/*border: 2px dashed blue;*/}
+    #contents .inner1 {width: 80%;  margin: 0 auto; height: 850px;}
+    #contents .inner1 h3 {font-size: 22px; text-align: center; padding: 120px;}
+    #contents .inner1 ul {display: flex; }
+    #contents .inner1 ul li {width: 80%; height: 300px;}
+    
+    #contents .inner1 ul li a{color: black;}
+    #contents .inner1 ul li img {width: 300px; height: auto; transition: 0.5s;}
+    #contents .inner1 ul li img:hover {transform: scale(1.2);}
+    #contents .inner1 ul li span {transition: 0.5s; text-align: center; font-size: 18px; display: block; width: 245px; border-left: 5px solid #000000; padding: 25px;background-color: #white; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+    #contents .inner1 ul li span:hover {background-color: rgb(190, 207, 221);}
+
+    #contents .inner1 .boxes {position: relative; display: flex; text-align; width: 100%; margin-bottom: 120px;}
+    #contents .inner1 .boxes .box1 {position: absolute; left: 710px; top: 80px; width: 10px; height: 10px; background-color: #aaa; border-radius: 50%;}
+    #contents .inner1 .boxes .box2 {position: absolute; left: 730px; top: 80px; width: 10px; height: 10px; background-color: #ccc; border-radius: 50%;}
+    #contents .inner1 .boxes .box3 {position: absolute; left: 750px; top: 80px; width: 10px; height: 10px; background-color: #ccc; border-radius: 50%;}
+    #contents .inner1 .boxes .box4 {position: absolute; left: 770px; top: 80px; width: 10px; height: 10px; background-color: #ccc; border-radius: 50%;}
+
+    #contents2 {background-color: rgb(190, 207, 221); height: 450px;
+    background-image: url(images/con-vi.jpg); }
+    #contents2 h3 {font-size: 22px; text-align: center; padding: 80px; color: white;}
+    #contents2 .inner2 {font-size: 16px; width: 80%;  margin: 0 auto; display: flex; justify-content: space-between;}
+    #contents2 .inner2 li { background-color: white; padding: 20px; border-radius: 50px;}
+    #contents2 .inner2 li a {color: black; transition: 0.5s; align-items: center;}
+    #contents2 .inner2 li a:hover {padding: 40px;}
+    #contents2 .inner2 li img {width: 50px; vertical-align: middle; margin-right: 10px;}
+
+
+    /*footer*/
+    #footer {background-color: black; height: 520px;}
+    #footer .inner3 {width: 1280px;margin: 0 auto;}
+    #footer .inner3 .con {display: flex; margin: 0 auto; justify-content: space-between; width: 180px; padding-top: 50px;padding-bottom: 50px;}
+    #footer .inner3 .con a img:hover {opacity:0.5;}
+    #footer .inner3 .sitemap {color: white; display: flex; justify-content: space-between;}
+    #footer .inner3 .sitemap div {margin}
+    #footer .inner3 .sitemap div h3 {font-size: 18px;} 
+    #footer .inner3 .sitemap ul{padding: 0;}
+    #footer .inner3 .sitemap ul li a{color: white; line-height: 30px;}
+    #footer .inner3 .sitemap ul li a:hover {text-decoration: underline;}
+    #footer .inner3 .detail {margin: 0 ; color: white; text-align: center; padding-top: 50px;}
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="skip_navigation">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#footer">하단 바로가기</a>
+    </div>
+
+    <div id="header">
+        <div class="inner">
+            <h1><img src="images/benz_logo2.jpg" alt="벤츠로고"></h1>
+            <nav class="gnb">
+                <h2 class="blind">주요메뉴</h2>
+                <ul>
+                    <a href="#"><li>Our Brand</li></a>
+                    <a href="#"><li>Models</li></a>
+                    <a href="#"><li>By online</li></a>
+                    <a href="#"><li>Offers & Finance</li></a>
+                    <a href="#"><li>Services</li></a>
+                </ul>
+            </nav>
+
+            <ul class="top_gnb">
+                <li>
+                    <form action="#">
+                        <fieldset>
+                            <legend class="blind">통합검색</legend>
+    
+                            <label for="t1" class="blind">검색어 입력</label>
+                            <input type="text" id="t1">
+    
+                            <input type="image" src="images/search.svg" alt="검색" class="icon">
+                        </fieldset>
+                    </form>
+                </li>
+
+                <li><a href="#"><img src="images/user.png" alt="my page" id="user"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="visual">
+        <div class="inner">
+            <img src="images/benz9_.jpg" alt="visual">
+            <p class="p1">Modern luxury</p>
+            <p class="p2">The Design of the Mercedes-Maybach S 650 Cabriolet.
+                <br>
+                Only 300 examples of this open-top four-seater model will be produced.
+            </p>
+        </div>
+    </div>
+
+    <div id="contents">
+        <div class="inner1">
+            <h3>더 알아보기</h3>
+            <ul>
+                <li><a href="#"><img src="images/benz4.jpg" alt="benz">
+                    <span>2023 classic campaign</span>
+                    </a>
+                </li>
+
+                <li><a href="#"><img src="images/image1.jpg" alt="benz">
+                    <span>E-Class 특별 구매 혜택</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/benz6.jpg" alt="benz">
+                    <span>The new GLE & GLE Coupé</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/image2.jpg" alt="benz">
+                    <span>Defining Class</span>
+                    </a>
+                </li>
+            </ul>
+
+        <div class="boxes">
+            <div class="box1"><a href="#"><span class="blind">1</span></a></div>
+            <div class="box2"><a href="#"><span class="blind">2</span></a></div>
+            <div class="box3"><a href="#"><span class="blind">3</span></a></div>
+            <div class="box4"><a href="#"><span class="blind">4</span></a></div>
+        </div>
+    </div>
+
+    <div id="contents2">
+        <h3>참고사항</h3>
+        <ul class="inner2">
+            <li><a href="#"><img src="images/hashtag.png" alt="hashtag">시승 신청</a></li>
+            <li><a href="#"><img src="images/hashtag.png" alt="hashtag">메르세데스-벤츠 스토어</a></li>
+            <li><a href="#"><img src="images/hashtag.png" alt="hashtag">메르세데스-벤츠 인증 중고차 스토어</a></li>
+            <li><a href="#"><img src="images/hashtag.png" alt="hashtag">온라인 서비스 예약</a></li>
+            <li><a href="#"><img src="images/hashtag.png" alt="hashtag">내 차량 만들기</a></li>
+        </ul>
+    </div>
+
+
+<div id="footer">
+        <div class="inner3">
+            <ul class="con">
+                <li>
+                    <a href="http://www.facebook.com"><img src="images/face.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com"><img src="images/insta.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube"></a>
+                </li>
+            </ul>
+            <h2 class="blind">회사 저작권 및 기타정보</h2>
+            <div class="sitemap">
+                <div>
+                <h3>차량 구매하기</h3>
+                <ul>
+                    <li><a href="#">메르세데스-벤츠 스토어</a></li>
+                    <li><a href="#">인증 중고차 스토어</a></li>
+                    <li><a href="#">카탈로그 다운로드</a></li>
+                    <li><a href="#">가격표 다운로드</a></li>
+                    <li><a href="#">모델 둘러보기</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <h3>차량 구매 가이드</h3>
+                <ul>
+                    <li><a href="#">시승 신청</a></li>
+                    <li><a href="#">전시장 찾기</a></li>
+                    <li><a href="#">내 차량 만들기</a></li>
+                    <li><a href="#">사용 설명서</a></li>
+                    <li><a href="#">월 납입금 계산기</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <h3>고객 서비스</h3>
+                <ul>
+                    <li><a href="#">온라인 서비스 예약</a></li>
+                    <li><a href="#">서비스 상품 안내</a></li>
+                    <li><a href="#">부품 가격 조회</a></li>
+                    <li><a href="#">리콜 정보</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <h3>Mercedes me</h3>
+                <ul>
+                    <li><a href="#">메르세데스 미 스토어</a></li>
+                    <li><a href="#">자주하는 질문</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <h3>Mercedes-Benz Promise</h3>
+                <ul>
+                    <li><a href="#">Mercedes-Benz GREEN+</a></li>
+                    <li><a href="#">Mercedes-Benz GIVE</a></li>
+                    <li><a href="#">Mercedes-Benz All Together</a></li>
+                    <li><a href="#">Mercedes-Benz Mobile Academy</a></li>
+                    <li><a href="#">Mercedes-Benz MobileKids</a></li>
+                </ul>
+                </div>
+
+                <div>
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="#">Contact Point</a></li>
+                    <li><a href="#">Van</a></li>
+                    <li><a href="#">메르세데스-벤츠 파이낸셜 서비스 코리아</a></li>
+                    <li><a href="#">MB Mobility Korea</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+                </div>
+            </div>
+            <hr>
+            <ul class="detail">
+                <li>©2023 메르세데스-벤츠 코리아(주) / 메르세데스-벤츠 파이낸셜 서비스 코리아(주) / 메르세데스-벤츠 모빌리티 코리아(주)</li>
+                <li>메르세데스-벤츠 코리아㈜ 서울특별시 중구 한강대로 416 서울 스퀘어 9층 (우) 04637 대표자 성명 : VAITL MATHIAS ALEXANDER 사업자 등록번호: 220-86-46545 호스팅서비스 제공자: Amazon Web Services, Inc. 고객 컨택 센터 경기도 부천시 원미구 부일로 223 투나 8층 (우) 14623 전화: 080-001-1886 이메일 : mbk_cs@mercedes-benz.com</li>
+                <li>메르세데스-벤츠 코리아㈜는 통신판매중개자이고 통신판매의 당사자가 아니며, 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
