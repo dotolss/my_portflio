@@ -1,0 +1,179 @@
+
+/* reset */
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+h1,h2,h3,h4 { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+/* base */
+body {font-family: "Garamond", "Noto Sans KR"; 
+	background-color: #fafafa;
+
+    background-image: url(../images/bg1-1.jpg); 
+	background-attachment:fixed;
+    background-repeat: no-repeat; 
+	background-position: center 0px;
+
+	overflow-x:hidden;
+}
+
+
+.blind { position:absolute; top:-9999px; }
+
+.skip_navigation a { 
+	position:absolute; left:0px; top:-9999px; z-index:1001;
+	color:white; background:black; padding:5px;
+}
+.skip_navigation a:focus { top:0; }
+
+
+/* layout */
+#header {
+    position: fixed; z-index: 10001; width: 100%; 
+    height: 90px; background-color: rgba(0,0,0,0.2);}
+
+#visual {
+
+     width: 100%; height:1000px;
+	 
+}
+
+     
+
+#footer { 
+	/*
+	background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat; background-position: center top;
+	*/
+    width: 100%; 
+}
+
+
+
+/* header */
+#header .inner {position:relative; width: 1200px; height: 90px; margin: 0 auto;}
+#header .inner h1 {position: absolute; left: 0px; top:37px; }
+#header .inner .gnb {position: absolute; right: 0px; top:37px; width:452px;
+                    font-family: "Noto Sans KR"; }
+#header .inner .gnb ul {display: flex; justify-content: space-between;}
+
+#header .inner .gnb a {
+	text-decoration: none; font-weight: bold; color: white;
+	border-radius:15px;
+	padding-left:9px;
+	padding-right:9px; transition:0.3s;
+}
+#header .inner .gnb a:hover {
+	background-color: #f8ff81; color: black; 
+}
+
+
+/* visual */
+
+#visual .inner {position:relative; width: 1200px; height: 511px; margin: 0 auto;}
+#visual .inner .p1 {position:absolute; left:55px; top:355px; font-size: 315px; color: white;} 
+#visual .inner .p1 span {color:#f8ff81;}
+#visual .inner .p2 {position:absolute; right:55px; top:771px; font-size: 24px; text-align: right; color: white;}
+
+
+
+/* work */
+
+#work { padding-top:800px; /* border:5px dashed yellow; */ 
+	
+    background-image: url(../images/bg1-1.png); 
+    background-repeat: no-repeat; background-position: center top;
+	
+}
+
+#work .inner {width: 1200px; position: relative; margin: 0 auto;}
+#work h3 {font-size: 48px; text-align: center; margin-bottom: 60px;} 
+#work .box{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#work .b {overflow: hidden;
+    position:relative; width: 370px; height: 564px; border-radius: 20px;
+	margin-bottom:50px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+#work .box .cover {color: white; 
+    position:absolute; left: 0px; top:565px; background: rgba(0,0,0,0.7); 
+    width: 370px; height: 564px; text-align:center; transition: 0.5s;}
+#work .b:hover .cover{top:400px;}
+#work .box .cover h4 {padding-top:35px; font-size: 40px; font-family: "Noto Sans KR";}
+#work .box .cover p {font-size: 15px; font-family: "Noto Sans KR";}
+
+#work .b2 {margin-top: 70px; width: 370px; height: 564px; margin-bottom:50px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b3 {width: 370px; height: 564px; margin-bottom:50px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */}
+#work .b4 {width: 370px; height: 564px; margin-bottom:50px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b5 {margin-top: 70px; width: 370px; height: 564px; margin-bottom:50px;
+	 /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b6 {width: 370px; height: 564px; margin-bottom:50px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b7 {width: 370px; height: 564px; margin-bottom:50px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b8 {margin-top: 70px; width: 370px; height: 564px; margin-bottom:50px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b9 {width: 370px; height: 564px; margin-bottom:50px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b10 {width: 370px; height: 564px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+#work .b11 {margin-top: 70px; width: 370px; height: 564px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */}
+#work .b12 {width: 370px; height: 564px; 
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/} 
+
+#work .box .cover a {text-decoration: none; color: white;}
+
+
+/* about */
+#about { /*border:5px dashed hotpink; */background-color:#fafafa; }
+#about h3 {font-size: 48px; text-align: center; padding-top: 320px; margin-bottom: 60px;}
+#about .inner{width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between;}
+#about .inner tr {font-family: "Noto Sans KR"; text-align: left;}
+#about .inner th {padding-right: 50px; padding-bottom: 5px; padding-top:12px;}
+
+.skill td { /* border:1px solid red; */ 
+	width:247px; 
+}
+.skill td .bar_bg { border:1px solid red; 
+	width:247px;
+	height:23px;
+	border:3px solid black; border-radius:15px;
+	box-sizing:border-box;
+
+	margin-top:10px;
+}
+.skill td .bar_bg .bar { 
+	width:10%; 
+	height:100%; background:black;
+	border-radius:15px;
+}
+
+
+/* contact */
+#contact { /* border:5px dashed green; */ background-color:#fafafa;}
+#contact h3 {font-size: 48px; text-align: center; padding-top: 320px; margin-bottom: 60px;}
+#contact .inner{/* border:5px dashed yellowgreen; */width: 1200px; margin: 0 auto;}
+#contact .inner ul {font-family: "Noto Sans KR"; text-align: center;}
+#contact .inner ul:first-child {margin-bottom: 70px;}
+#contact .inner ul img {margin-bottom: 20px;}
+
+
+/* footer */
+#footer .inner {
+	/* border:5px dashed red; */  
+	position: relative; 
+	width: 1200px; height:1771px;
+	margin: 0 auto; 
+}
+#footer .inner p.t1 {position: absolute; left: 70px; top:1100px; font-size: 246px; color: white;}
+#footer .inner p.t1 span {color: #f8ff81;}
+#footer .inner p.t2 {color: white; font-weight: bold; position: absolute; left:450px; 
+    top:1600px; font-size: 24px; font-family: "Noto Sans KR";}
+
+#footer .inner img { transition:1.5s; position: absolute; 
+left:-940px; bottom:0px; z-index:-1; }
