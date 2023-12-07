@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZARA</title>
+<style>
+/* reset */
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+h1,h2,h3,h4 { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+body {font-family: 'Franklin Gothic Demi','Baskerville Old Face','Noto Sans KR'; font-size: 16px;}
+
+.blind { position:absolute; top:-9999px; }
+
+
+
+.skip_navigation a { 
+	position:absolute; left:0px; top:-9999px; z-index:1001;
+	color:white; background:black; padding:5px;}
+.skip_navigation a:focus { top:0; }
+
+
+/* layout */
+
+#headervisual {background-image: url(images/bg.jpg); background-repeat: no-repeat; background-position: center top;
+background-attachment: fixed;height: 983px;}
+
+#container {height: 1932px;}
+
+#footer {height:486px;}
+
+
+/* header+visual */
+#headervisual .inner {width: 1360px;margin: 0 auto; position: relative;}
+#headervisual .inner h3 {position: absolute; left: 0px; top:48px;}
+#headervisual .inner input {position: absolute; left: 308px; top:52px ; outline: none; border: 0;
+     border: 2px solid black; width: 615px; height:32px;padding-left: 10px;}
+#headervisual .inner .search {position: absolute; left: 906px; top:58px ; width: 23px;}
+#headervisual .inner .search:hover {opacity: 0.5;}
+#headervisual .inner .gnb {position: absolute; right: 0; top:64px ; display: flex; justify-content: space-between; width: 320px;}
+#headervisual .inner .gnb a {text-decoration: none; color: black; padding: 5px; }
+#headervisual .inner .gnb a:hover {background-color: white; border-radius: 20px;}
+
+.p1 {position: absolute; left: 0px; top: 350px; font-size: 150px; color: white;}
+.p2 {position: absolute; left: 0px; top: 500px; color: white;}
+
+
+
+
+
+
+/* container */
+#container .inner {width:1360px; margin: 0 auto;}
+
+#container .inner .right {text-align: right; padding-top: 80px; font-size: 14px;}
+
+#container .inner .p {
+    padding-top: 10px;
+    display: flex;
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+#container .inner .p a {text-decoration: none; color: #444;}
+#container .inner .p a:hover {color: #777;}
+
+#container .inner .mini {
+    padding-top: 30px;
+    display: flex; justify-content: space-between;
+    font-size: 16px;
+}
+#container .inner .mini a{
+    text-decoration: none; color: black; font-weight: bold;
+    border-left: 0; padding: 5px;
+}
+
+#container .inner .mini a:hover{
+    border-top: 3px solid black;
+}
+
+#container .inner .product { width: 1100px; margin: 0 auto;
+    padding-top: 80px;
+    display: flex; justify-content: space-between; flex-wrap: wrap;}
+#container .inner .product img { width: 300px;
+    margin-bottom: 20px; transition: 0.5s;
+}
+#container .inner .product img:hover {border-radius:40px;}
+
+#container .inner .product p {text-align: center;}
+#container .inner .product .t2 {
+    color: #243688; font-weight: bold; 
+    font-family: "Noto Sans KR"; padding-bottom: 100px;
+}
+
+
+
+
+/* footer */
+#footer .detail {/*background-color: #233787;*/ height: 346px; background-image: url(images/footerimg.jpg);}
+#footer .detail .inner1 {width: 1360px; margin: 0 auto;}
+#footer .detail .inner1 p {color: white; font-family:'Franklin Gothic Demi','Noto Sans KR'; text-align: center;}
+#footer .detail .inner1 p.newsletter {font-size: 24px; padding-top: 58px; font-weight: 600;padding-bottom: 62px;}
+#footer .detail .inner1 p.jung {padding-top: 70px; margin-bottom: 43px;}
+
+#footer .copyright {background-color: white; color: black; height: 140px; font-family: 'Franklin Gothic Demi','Noto Sans KR';}
+#footer .copyright .inner2 {width: 1360px; margin: 0 auto; text-align: center; padding-top:65px;}
+</style>
+
+</head>
+<body>
+    <div class="skip_navigation">
+        <a href="#container">본문 바로가기</a>
+        <a href="#footer">하단 바로가기</a>
+    </div>
+
+    
+    <div id="headervisual">
+        <div class="inner">
+        <h3><a href="index.html"><img src="images/logo.png" alt="ZARA"></a></h3>
+
+        <nav>
+            <ul>
+                <li><a href="#">
+                    <form>
+                        <fieldset>
+                            <legend class="blind">통합검색</legend>
+                            <label for="t1" class="blind">검색어 입력</label>
+                            <input type="text">
+                        </fieldset>
+                    </form>
+                </a></li>
+                <li><a href="#"><img src="images/search.png" alt="search" class="search"></a></li>
+            </ul>
+            <h2 class="blind">주요메뉴</h2>
+            <ul class="gnb">
+                <li><a href="sub1.html">WOMAN</a></li>
+                <li><a href="sub1.html">MAN</a></li>
+                <li><a href="sub1.html">KIDS</a></li>
+                <li><a href="sub1.html">HOME</a></li>
+                <li><a href="sub1.html">BEAUTY</a></li>
+            </ul>
+        </nav>
+        <p class="p1">STYLISH</p>
+            <p class="p2">A creative person has the ability to invent and develop original ideas, especially in the arts.
+                <br>If you use something in a creative way, you use it in a new way that produces interesting and unusual results.  
+            </p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="inner">
+
+            <div class="right">
+                <p>HOME > WOMAN</p>
+            </div>
+
+            <div class="p">
+            <p><a href="#">종류별</a></p>
+            <p>ㅣ</p>  
+            <p><a href="#">색상별</a></p>
+            <p>ㅣ</p>
+            <p><a href="#">전체보기</a></p>
+            </div>
+
+            <ul class="mini">
+                <li><a href="#">원피스/점프수트</a></li>
+                <li><a href="#">코트/트렌치</a></li>
+                <li><a href="#">니트</a></li>
+                <li><a href="#">자켓/블레이저</a></li>
+                <li><a href="#">탑/바디수트</a></li>
+                <li><a href="#">셔츠/티셔츠/맨투맨</a></li>
+                <li><a href="#">팬츠</a></li>
+                <li><a href="#">스커트</a></li>
+                <li><a href="#">란제리</a></li>
+                <li><a href="#">수트</a></li>
+            </ul>
+            <hr>
+
+            <div class="product">
+                <div><a href="#"><img src="images/sub1.jpg" alt="메탈릭 얀 프린트 미니 원피스"></a>
+                    <p class="t1">메탈릭 얀 프린트 미니 원피스</p>
+                    <p class="t2">89,900원</p></div>
+
+                <div><a href="#"><img src="images/sub2.jpg" alt="플라워 프린트 ZW COLLECTION"></a>
+                    <p class="t1">플라워 프린트 ZW COLLECTION</p>
+                    <p class="t2">59,900원</p></div>
+
+                <div><a href="#"><img src="images/sub3.jpg" alt="TRF 데님 점프수트"></a>
+                    <p class="t1">TRF 데님 점프수트</p>
+                    <p class="t2">109,900원</p></div>
+
+                <div><a href="#"><img src="images/sub4.jpg" alt="드레이프 니트 원피스"></a>
+                    <p class="t1">드레이프 니트 원피스</p>
+                    <p class="t2">79,900원</p></div>
+                
+                <div><a href="#"><img src="images/sub5.jpg" alt="비즈 시퀸 스웨트셔츠"></a>
+                    <p class="t1">비즈 시퀸 스웨트셔츠</p>
+                    <p class="t2">79,900원</p></div>
+
+                <div><a href="#"><img src="images/sub6.jpg" alt="박시핏 탑 X STUDIO NICHOLSON"></a>
+                    <p class="t1">박시핏 탑 X STUDIO NICHOLSON</p>
+                    <p class="t2">189,900원</p></div>
+
+                <div><a href="#"><img src="images/sub7.jpg" alt="트리콧 부클레 스웨트셔츠"></a>
+                    <p class="t1">트리콧 부클레 스웨트셔츠</p>
+                    <p class="t2">55,900원</p></div>
+
+                <div><a href="#"><img src="images/sub8.jpg" alt="캐시미어 블렌드 스웨트셔츠 X STUDIO NICHOLSON"></a>
+                    <p class="t1">캐시미어 블렌드 스웨트셔츠 
+                        <br>X STUDIO NICHOLSON</p>
+                    <p class="t2">369,900원</p></div>
+
+                <div><a href="#"><img src="images/sub4.jpg" alt="자수 텍스트 후드 스웨트셔츠"></a>
+                    <p class="t1">자수 텍스트 후드 스웨트셔츠</p>
+                    <p class="t2">59,900원</p></div>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="detail">
+            <div class="inner1">
+            <h2 class="blind">회사 기타 정보</h2>
+            <p class="newsletter">뉴스레터에 가입하세요</p>
+            <p>TIKTOK   instagram   facebook   X   pinterest   kakao   youtube   spotify </p>
+            <p class="jung">아이티엑스코리아 유한회사 ｜ 사업자등록번호: 120-88-14733 ｜ 대표자 : ROMAY DE LA COLINA JOSE 
+                MANUEL ｜ 서울시 강남구 영동대로 511 (삼성동, 트레이드타워 33층) ｜  대표번호: 080-479-0880  ｜  호스팅 서비스 사업자: ITX Merken, B.V.  </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="inner2">
+                <p>Copyright 2023, ZARA, All rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
