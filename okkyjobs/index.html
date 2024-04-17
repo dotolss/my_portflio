@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/default.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<title>OKKY - 구인 계약직</title>
+</head>
+<body>
+    <div class="skip_navigation">
+        <a href="#container">본문 바로가기</a>
+        <a href="#footer">하단 바로가기</a>
+    </div>
+
+    <header id="header">
+        <div class="inner">
+            <h1><a href="#"><img src="images/1.jpg" alt="OKKYJOBS"></a></h1>
+            <nav>
+                <h2 class="blind">주요메뉴</h2>
+                <ul class="gnb">
+                    <li><a href="#" class="m1">계약직</a></li>
+                    <li><a href="#">정규직</a></li>
+                    <li><a href="#">구직</a></li>
+                    <li><a href="#">Talent</a></li>
+                    <li><a href="#">좋은회사/나쁜회사</a></li>
+                    <li class="bar">ㅣ</li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+
+                <ul class="top_gnb">
+                    <li><a href="#">열람권 구매</a></li>
+                    <li><a href="#">등록권 구매</a></li>
+                    <li><a href="#" class="l1">로그인</a></li>
+                    <li><a href="#" class="l2">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="visual">
+        <div class="inner2">
+            <p>OKKY Jobs는 국내 최대·최고의 개발자 전문 Job Platform입니다</p>
+            <p><span>Yes!</span> 클린일자리 체크리스트, 스마트필터, 바로지원, 무료 법률상담 서비스
+                <br>
+                <span>No!</span> 허위 구인게시물
+            </p>
+
+            <div class="search-container">
+                <a href="#">
+                    <form>
+                        <fieldset>
+                            <legend class="blind">통합검색</legend>
+                            <label for="t1" class="blind">검색어 입력</label>
+                            <input type="text" id="searchInput" placeholder="구인/계약직/회사 검색">
+                        </fieldset>
+                    </form>
+                </a>
+                <img src="images/2.jpg" alt="검색아이콘" class="search">
+                <a href="#"><img src="images/x.png" alt="없애기아이콘" class="x"></a>
+                <a href="#" class="button">찾기</a>
+            </div>
+        </div>
+    </main>
+
+    <section id="contents">
+        <div class="inner3">
+            <div class="menu1">
+                <ul class="menu">
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>유형</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>포지션</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+                
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>지역</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+                
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>급여</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+                
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>경력</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>근무시작</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+                
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>보유기술</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+                
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>근무방식</p>
+                        <img src="images/down_arrow.png" alt="아래화살표아이콘">
+                    </li>
+                </ul>
+
+                <ul class="checkbox-container">
+                        <li>
+                            <p>전체해제</p>
+                        </li>
+                        <li> 
+                            <input type="checkbox" id="checkbox1" onclick="toggleCheckbox('checkbox1')">
+                            <label for="checkbox1"> 저장</label>
+                        </li>
+                </ul>
+            </div>
+            <div class="detail-align">
+                <p class="position">185개의 포지션</p>
+                <ul class="align">
+                    <li>
+                        <img src="images/grid.png" alt="그리드아이콘">
+                        <p>그리드</p>
+                    </li>
+
+                    <li>
+                        <img src="images/line.png" alt="정렬아이콘">
+                        <p>최신순</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="article">
+                <div class="box b1">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b2">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b3">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b4">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b5">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b6">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b7">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b8">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b9">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b10">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b11">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b12">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="box b13">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b14">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b15">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b16">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b17">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b18">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b19">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box b20">
+                    <a href="#">
+                        <img src="images/company.jpg" alt="회사 사진" class="company">
+                        <div class="white"> 
+                            <div class="c_name">
+                                <img src="images/company.jpg" class="company_icon" alt="회사 로고">
+                                <a href="#"><p>(주)더큰정보기술</p></a>
+                                <p class="company_detail">SM·물류</p>
+                            </div>
+                            <div class="detail2">
+                                <p>풀스텍개발, 팀원</p>
+                                <p class="bar">ㅣ</p>
+                                <p>의료기관 관련 구매물류시스템 운영/개발(SM) - java개발자 모집(6년 ~, 6개월)</p>
+                            </div>
+                            <ul class="detail3">
+                                <li>
+                                    <img src="images/coding.png" alt="코딩아이콘">
+                                    <p>java, jsp, 구매, 물류</p>
+                                </li>
+                                <li>
+                                    <img src="images/backpack.png" alt="직장아이콘">
+                                    <p>6년 이상 ~ 무관 · </p>
+                                    <img src="images/location.png" alt="위치아이콘">
+                                    <p>서울 서초구 서초동</p>
+                                </li>
+                                <li>
+                                    <img src="images/coin.png" alt="돈아이콘">
+                                    <p>580~730만원 · </p>
+                                    <img src="images/schedule.png" alt="스케줄아이콘">
+                                    <p>마감 2.04(일)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="order">
+                    <div class="line"></div>
+                    <ul class="number">
+                        <li><a href="#"><img src="images/left_arrow.png" alt="왼쪽화살표">Previous</a></li>
+                        <ul class="number_n">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#" class="dot">...</a></li>
+                            <li><a href="#">10</a></li>
+                        </ul>
+                        <li><a href="#">Next<img src="images/right_arrow.png" alt="오른쪽화살표"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---<div class="long_line"></div>-->
+
+    <footer id="footer">
+        <div class="inner4">
+            <div class="s1">
+                <img src="images/footer_logo.jpg" alt="footer_logo">
+                <ul class="f_icon">
+                    <li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/mail.png" alt="메일" class="mail"></a></li>
+                </ul>
+            </div>
+
+            <div class="s2">
+                <h2 class="blind">회사 기타 정보</h2>
+                <ul class="site">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">통합 서비스 이용약관</a></li>
+                    <li><a href="#">개인정보 보호방침</a></li>
+                </ul>
+                <p>상호명: <strong>(주)오키코리아</strong> | 대표명: 노상범, 장기진
+                    <br>
+                    사업자등록번호: 592-87-02037 | 통신판매업신고번호: 제 2022-서울강남-04742호 | 직업정보 제공사업 신고번호: J1200020230009
+                    <br>
+                    주소: 서울 강남구 봉은사로 303 TGL경복빌딩 502호 (06103) | 고객센터 : jobs@okky.kr (영업시간 평일 10:00~17:00) 주말 · 공휴일 휴무
+                </p>
+
+                <p>© 2023 (주)오키코리아, Inc. All rights reserved.</p>
+            </div>
+
+            <div class="s3">
+                <p>SPONSORED BY</p>
+                <ul class="spon_icon">
+                    <li><a href="#"><img src="images/spon1.jpg" alt="inames"></a></li>
+                    <li><a href="#"><img src="images/spon2.jpg" alt="NHNCloud" class="nhncloud"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
